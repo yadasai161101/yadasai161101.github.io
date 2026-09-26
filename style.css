@@ -1,0 +1,14 @@
+body { margin:0; font-family:Segoe UI,sans-serif; background:#020617; color:white; }
+canvas { position:fixed; top:0; z-index:-1; }
+nav { position:fixed; width:100%; background:#020617; display:flex; justify-content:space-between; padding:10px 30px; }
+nav a { color:#38bdf8; margin:0 15px; text-decoration:none; }
+header { height:100vh; text-align:center; padding-top:150px; }
+#typing { color:#38bdf8; }
+.section { padding:80px 10%; }
+.grid, .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+.card { background:#1e293b; padding:15px; border-radius:10px; text-align:center; }
+.timeline .entry { background:#1e293b; padding:15px; margin-bottom:15px; border-left:4px solid #38bdf8; }
+.btn { background:#38bdf8; padding:10px 20px; color:black; border-radius:5px; text-decoration:none; }
+.secondary { background:transparent; border:1px solid #38bdf8; color:#38bdf8; }
+.fade { opacity:0; transform:translateY(30px); transition:1s; }
+.fade.show { opacity:1; transform:translateY(0); }

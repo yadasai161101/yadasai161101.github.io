@@ -1,530 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yada Sai Anirudh | Cloud & DevOps Engineer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#0d1117;
-    color:#e6edf3;
-    line-height:1.6;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
-    background:rgba(13,17,23,.95);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid #21262d;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 0;
-}
-
-.logo{
-    font-size:1.3rem;
-    font-weight:700;
-    color:#58a6ff;
-}
-
-.nav-links{
-    display:flex;
-    gap:25px;
-}
-
-.nav-links a{
-    color:#e6edf3;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#58a6ff;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    text-align:center;
-}
-
-.hero-content{
-    width:100%;
-}
-
-.hero h1{
-    font-size:4rem;
-    margin-bottom:10px;
-}
-
-.hero h2{
-    color:#58a6ff;
-    margin-bottom:20px;
-}
-
-.hero p{
-    max-width:800px;
-    margin:auto;
-    color:#8b949e;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:12px 28px;
-    background:#238636;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-section{
-    padding:100px 0;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-    font-size:2.2rem;
-    color:#58a6ff;
-}
-
-.about{
-    background:#161b22;
-}
-
-.card{
-    background:#161b22;
-    border:1px solid #30363d;
-    padding:25px;
-    border-radius:12px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#58a6ff;
-}
-
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-}
-
-.skill-card h3{
-    margin-bottom:15px;
-    color:#58a6ff;
-}
-
-.skill-card ul{
-    list-style:none;
-}
-
-.skill-card li{
-    padding:6px 0;
-}
-
-.timeline{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-}
-
-.timeline-item{
-    background:#161b22;
-    padding:25px;
-    border-left:4px solid #58a6ff;
-    border-radius:10px;
-}
-
-.timeline-item h3{
-    color:#58a6ff;
-}
-
-.projects-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
-}
-
-.project-card h3{
-    color:#58a6ff;
-    margin-bottom:10px;
-}
-
-.tags{
-    margin-top:15px;
-}
-
-.tag{
-    display:inline-block;
-    padding:5px 10px;
-    background:#21262d;
-    border-radius:20px;
-    font-size:.8rem;
-    margin:3px;
-}
-
-.contact{
-    text-align:center;
-}
-
-.contact-links{
-    margin-top:25px;
-}
-
-.contact-links a{
-    color:#58a6ff;
-    text-decoration:none;
-    display:block;
-    margin:10px 0;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    border-top:1px solid #21262d;
-    color:#8b949e;
-}
-
-.scrollTop{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    width:45px;
-    height:45px;
-    border:none;
-    border-radius:50%;
-    background:#58a6ff;
-    color:white;
-    cursor:pointer;
-    display:none;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:2.5rem;
-}
-
-.nav-links{
-    display:none;
-}
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Yada Sai Anirudh | DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-<div class="container">
+<canvas id="bg"></canvas>
 <nav>
-<div class="logo">YSA</div>
-
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
+  <h2>☸ YSA</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#timeline">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
-</div>
+<header>
+  <h1>Yada Sai Anirudh</h1>
+  <h2 id="typing"></h2>
+  <p>DevOps Engineer | Azure & AWS | Kubernetes | CI/CD</p>
+  <div class="hero-buttons">
+    <a href="#contact" class="btn">Hire Me</a>
+    <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+  </div>
 </header>
-
-<section class="hero">
-<div class="container hero-content">
-
-<h1>Yada Sai Anirudh</h1>
-
-<h2>Cloud & DevOps Engineer</h2>
-
-<p>
-Cloud & DevOps Engineer with 2+ years of experience designing CI/CD pipelines,
-automating cloud infrastructure, managing Kubernetes platforms, and implementing
-DevOps best practices using Azure, Docker, AKS, Terraform, Jenkins, GitHub Actions,
-ArgoCD, Prometheus, and Grafana.
-</p>
-
-<a href="#projects" class="btn">View Projects</a>
-
-</div>
+<section id="about" class="section fade">
+  <h2>About Me</h2>
+  <p>Junior DevOps Engineer with 2+ years of experience in CI/CD pipelines, containerized workloads, and cloud infrastructure on Azure with AWS exposure.</p>
 </section>
-
-<section id="about" class="about">
-<div class="container">
-
-<h2 class="section-title">About Me</h2>
-
-<div class="card">
-<p>
-I am a Cloud & DevOps Engineer passionate about automation, cloud-native technologies,
-Infrastructure as Code, Kubernetes, and modern CI/CD practices.
-I enjoy building scalable, secure, and highly available platforms that accelerate software delivery.
-</p>
-</div>
-
-</div>
+<section id="skills" class="section fade">
+  <h2>Tech Stack</h2>
+  <div class="grid">
+    <div>Azure</div><div>AWS</div><div>Docker</div><div>Kubernetes</div>
+    <div>Jenkins</div><div>GitHub Actions</div><div>Terraform</div><div>Ansible</div>
+    <div>Prometheus</div><div>Grafana</div><div>Linux</div><div>ArgoCD</div>
+  </div>
 </section>
-
-<section id="experience">
-<div class="container">
-
-<h2 class="section-title">Experience</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<h3>DevOps Engineer | Makro Care</h3>
-<p>Mar 2026 - Present</p>
-
-<ul>
-<li>Manage Azure DevOps CI/CD pipelines.</li>
-<li>Deploy Docker and Kubernetes workloads.</li>
-<li>Implement SonarQube quality gates.</li>
-<li>Automate infrastructure using Python & Bash.</li>
-<li>Monitor systems using Prometheus, Grafana and Azure Monitor.</li>
-</ul>
-</div>
-
-<div class="timeline-item">
-<h3>DevOps Engineer | Credencer Technologies</h3>
-<p>Dec 2023 - Mar 2026</p>
-
-<ul>
-<li>Built CI/CD pipelines using Azure DevOps and Jenkins.</li>
-<li>Implemented GitOps deployments using ArgoCD.</li>
-<li>Managed Azure infrastructure and networking.</li>
-<li>Provisioned Linux and Windows environments.</li>
-<li>Implemented centralized monitoring solutions.</li>
-</ul>
-</div>
-
-</div>
-
-</div>
+<section id="timeline" class="section fade">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="entry">
+      <h3>Junior DevOps Engineer – Credencer Technologies</h3>
+      <span>Jul 2024 – Present</span>
+      <p>CI/CD pipelines, Docker, AKS, GitOps with ArgoCD, Monitoring</p>
+    </div>
+    <div class="entry">
+      <h3>Cloud Administrator – Credencer Technologies</h3>
+      <span>Dec 2023 – Jul 2024</span>
+      <p>Azure VMs, VNets, Load Balancers, Azure Monitor, Backups</p>
+    </div>
+  </div>
 </section>
-
-<section id="skills">
-<div class="container">
-
-<h2 class="section-title">Technical Skills</h2>
-
-<div class="skills-grid">
-
-<div class="card skill-card">
-<h3>Cloud</h3>
-<ul>
-<li>Microsoft Azure</li>
-<li>Azure Monitor</li>
-<li>Application Insights</li>
-</ul>
-</div>
-
-<div class="card skill-card">
-<h3>CI/CD</h3>
-<ul>
-<li>Azure DevOps</li>
-<li>Jenkins</li>
-<li>GitHub Actions</li>
-</ul>
-</div>
-
-<div class="card skill-card">
-<h3>Containers</h3>
-<ul>
-<li>Docker</li>
-<li>Kubernetes</li>
-<li>AKS</li>
-</ul>
-</div>
-
-<div class="card skill-card">
-<h3>IaC</h3>
-<ul>
-<li>Terraform</li>
-<li>Ansible</li>
-</ul>
-</div>
-
-<div class="card skill-card">
-<h3>Monitoring</h3>
-<ul>
-<li>Prometheus</li>
-<li>Grafana</li>
-</ul>
-</div>
-
-<div class="card skill-card">
-<h3>Scripting</h3>
-<ul>
-<li>Python</li>
-<li>Bash</li>
-<li>Linux</li>
-</ul>
-</div>
-
-</div>
-
-</div>
+<section id="projects" class="section fade">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Cloud Native App (AKS)</h3>
+      <p>Dockerized app deployed using CI/CD and Kubernetes</p>
+    </div>
+    <div class="card">
+      <h3>CI/CD Automation</h3>
+      <p>Jenkins + GitHub + Azure DevOps pipelines</p>
+    </div>
+    <div class="card">
+      <h3>Virtualization Platform</h3>
+      <p>Proxmox & Backup Server with DR</p>
+    </div>
+  </div>
 </section>
-
-<section id="projects">
-<div class="container">
-
-<h2 class="section-title">Featured Projects</h2>
-
-<div class="projects-grid">
-
-<div class="card project-card">
-<h3>Azure DevOps AKS GitOps Platform</h3>
-<p>
-Built a complete CI/CD and GitOps platform using Azure DevOps,
-Docker, Azure Container Registry, AKS and ArgoCD.
-</p>
-
-<div class="tags">
-<span class="tag">Azure DevOps</span>
-<span class="tag">AKS</span>
-<span class="tag">Docker</span>
-<span class="tag">ArgoCD</span>
-</div>
-</div>
-
-<div class="card project-card">
-<h3>Terraform Azure Enterprise Infrastructure</h3>
-<p>
-Provisioned enterprise-grade Azure infrastructure using reusable
-Terraform modules and Infrastructure as Code principles.
-</p>
-
-<div class="tags">
-<span class="tag">Terraform</span>
-<span class="tag">Azure</span>
-<span class="tag">IaC</span>
-</div>
-</div>
-
-<div class="card project-card">
-<h3>Kubernetes Monitoring Platform</h3>
-<p>
-Implemented observability stack with Prometheus,
-Grafana and Alertmanager for cluster monitoring.
-</p>
-
-<div class="tags">
-<span class="tag">Prometheus</span>
-<span class="tag">Grafana</span>
-<span class="tag">Kubernetes</span>
-</div>
-</div>
-
-<div class="card project-card">
-<h3>Proxmox Enterprise Home Lab</h3>
-<p>
-Built virtualization platform with FleetDM, GLPI,
-OCS Inventory and Proxmox Backup Server.
-</p>
-
-<div class="tags">
-<span class="tag">Proxmox</span>
-<span class="tag">FleetDM</span>
-<span class="tag">GLPI</span>
-</div>
-</div>
-
-</div>
-
-</div>
+<section id="contact" class="section fade">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
 </section>
-
-<section class="contact" id="contact">
-<div class="container">
-
-<h2 class="section-title">Contact</h2>
-
-<p>Let's connect and discuss Cloud, DevOps and Infrastructure projects.</p>
-
-<div class="contact-links">
-
-<a href="mailto:yadasaianirudh2001@gmail.com">
-📧 yadasaianirudh2001@gmail.com
-</a>
-
-<a href="tel:+917901263991">
-📱 +91 7901263991
-</a>
-
-<a href="https://github.com/yadasai161101" target="_blank">
-GitHub Profile
-</a>
-
-<a href="https://www.linkedin.com/in/sai-anirudh-yada/" target="_blank">
-LinkedIn Profile
-</a>
-
-</div>
-
-</div>
-</section>
-
 <footer>
-© 2026 Yada Sai Anirudh | Cloud & DevOps Engineer
+  <p>© 2026 Yada Sai Anirudh | DevOps Portfolio</p>
 </footer>
-
-<button class="scrollTop" id="topBtn">↑</button>
-
-<script>
-
-const btn = document.getElementById('topBtn');
-
-window.addEventListener('scroll', () => {
-    if(window.scrollY > 300){
-        btn.style.display='block';
-    }else{
-        btn.style.display='none';
-    }
-});
-
-btn.addEventListener('click',()=>{
-    window.scrollTo({
-        top:0,
-        behavior:'smooth'
-    });
-});
-
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
